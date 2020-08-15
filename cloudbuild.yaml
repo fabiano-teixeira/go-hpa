@@ -39,8 +39,7 @@ steps:
       - 'gcr.io/$PROJECT_ID/go-hpa:${_GO_HPA_VERSION}'
       - '-t'
       - 'gcr.io/$PROJECT_ID/go-hpa:latest' 
-
-
+      - '.'
 
 images:
   - 'gcr.io/$PROJECT_ID/go-hpa:latest'
