@@ -1,0 +1,147 @@
+starting build "2f58febc-c45e-4793-a4fb-232f759bd465"
+
+FETCHSOURCE
+Fetching storage object: gs://80868692064.cloudbuild-source.googleusercontent.com/c02002e763db26615376934b6e3e77de6fd462e4-f69ebc42-f1e0-490b-b62e-68a4f7b932c2.tar.gz#1597455342368754
+Copying gs://80868692064.cloudbuild-source.googleusercontent.com/c02002e763db26615376934b6e3e77de6fd462e4-f69ebc42-f1e0-490b-b62e-68a4f7b932c2.tar.gz#1597455342368754...
+/ [0 files][    0.0 B/  3.8 MiB]                                                
+/ [1 files][  3.8 MiB/  3.8 MiB]                                                
+Operation completed over 1 objects/3.8 MiB.                                      
+BUILD
+Starting Step #0 - "Rodando testes ..."
+Step #0 - "Rodando testes ...": Already have image (with digest): gcr.io/cloud-builders/go
+Step #0 - "Rodando testes ...": 
+Step #0 - "Rodando testes ...":                    ***** NOTICE *****
+Step #0 - "Rodando testes ...": 
+Step #0 - "Rodando testes ...": Alternative official `golang` images, including multiple versions across
+Step #0 - "Rodando testes ...": multiple platforms, are maintained by the Docker Community.
+Step #0 - "Rodando testes ...": 
+Step #0 - "Rodando testes ...": For details, visit https://hub.docker.com/_/golang.
+Step #0 - "Rodando testes ...": 
+Step #0 - "Rodando testes ...":                 ***** END OF NOTICE *****
+Step #0 - "Rodando testes ...": 
+Step #0 - "Rodando testes ...": Creating shadow workspace and symlinking source into "./gopath/src/go-hpa".
+Step #0 - "Rodando testes ...": Documentation at https://github.com/GoogleCloudPlatform/cloud-builders/blob/master/go/README.md
+Step #0 - "Rodando testes ...": Running: go test go-hpa
+Step #0 - "Rodando testes ...": ok  	go-hpa	0.003s
+Finished Step #0 - "Rodando testes ..."
+Starting Step #1 - "Instalando o GO ..."
+Step #1 - "Instalando o GO ...": Already have image (with digest): gcr.io/cloud-builders/go
+Step #1 - "Instalando o GO ...": 
+Step #1 - "Instalando o GO ...":                    ***** NOTICE *****
+Step #1 - "Instalando o GO ...": 
+Step #1 - "Instalando o GO ...": Alternative official `golang` images, including multiple versions across
+Step #1 - "Instalando o GO ...": multiple platforms, are maintained by the Docker Community.
+Step #1 - "Instalando o GO ...": 
+Step #1 - "Instalando o GO ...": For details, visit https://hub.docker.com/_/golang.
+Step #1 - "Instalando o GO ...": 
+Step #1 - "Instalando o GO ...":                 ***** END OF NOTICE *****
+Step #1 - "Instalando o GO ...": 
+Step #1 - "Instalando o GO ...": Creating shadow workspace and symlinking source into "./gopath/src/go-hpa".
+Step #1 - "Instalando o GO ...":   File: './gopath/src/go-hpa' -> '/workspace'
+Step #1 - "Instalando o GO ...":   Size: 10        	Blocks: 0          IO Block: 4096   symbolic link
+Step #1 - "Instalando o GO ...": Device: 801h/2049d	Inode: 1290265     Links: 1
+Step #1 - "Instalando o GO ...": Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Step #1 - "Instalando o GO ...": Access: 2020-08-15 01:35:51.000000000
+Step #1 - "Instalando o GO ...": Modify: 2020-08-15 01:35:51.000000000
+Step #1 - "Instalando o GO ...": Change: 2020-08-15 01:35:51.000000000
+Step #1 - "Instalando o GO ...": 
+Step #1 - "Instalando o GO ...": Documentation at https://github.com/GoogleCloudPlatform/cloud-builders/blob/master/go/README.md
+Step #1 - "Instalando o GO ...": Binaries built using 'go install' will go to "/workspace/gopath/bin".
+Step #1 - "Instalando o GO ...": Running: go install .
+Finished Step #1 - "Instalando o GO ..."
+Starting Step #2 - "Executando o build da aplicaÃ§Ã£o."
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Already have image (with digest): gcr.io/cloud-builders/go
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": 
+Step #2 - "Executando o build da aplicaÃ§Ã£o.":                    ***** NOTICE *****
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": 
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Alternative official `golang` images, including multiple versions across
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": multiple platforms, are maintained by the Docker Community.
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": 
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": For details, visit https://hub.docker.com/_/golang.
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": 
+Step #2 - "Executando o build da aplicaÃ§Ã£o.":                 ***** END OF NOTICE *****
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": 
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Creating shadow workspace and symlinking source into "./gopath/src/go-hpa".
+Step #2 - "Executando o build da aplicaÃ§Ã£o.":   File: './gopath/src/go-hpa' -> '/workspace'
+Step #2 - "Executando o build da aplicaÃ§Ã£o.":   Size: 10        	Blocks: 0          IO Block: 4096   symbolic link
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Device: 801h/2049d	Inode: 1290265     Links: 1
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Access: 2020-08-15 01:35:51.000000000
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Modify: 2020-08-15 01:35:51.000000000
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Change: 2020-08-15 01:35:51.000000000
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": 
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Documentation at https://github.com/GoogleCloudPlatform/cloud-builders/blob/master/go/README.md
+Step #2 - "Executando o build da aplicaÃ§Ã£o.": Running: go build -a -installsuffix cgo -ldflags -extldflags "-static" -o go-hpa .
+Finished Step #2 - "Executando o build da aplicaÃ§Ã£o."
+Starting Step #3 - "Executando build do container"
+Step #3 - "Executando build do container": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "Executando build do container": 
+Step #3 - "Executando build do container":                    ***** NOTICE *****
+Step #3 - "Executando build do container": 
+Step #3 - "Executando build do container": Alternative official `docker` images, including multiple versions across
+Step #3 - "Executando build do container": multiple platforms, are maintained by the Docker Team. For details, please
+Step #3 - "Executando build do container": visit https://hub.docker.com/_/docker.
+Step #3 - "Executando build do container": 
+Step #3 - "Executando build do container":                 ***** END OF NOTICE *****
+Step #3 - "Executando build do container": 
+Step #3 - "Executando build do container": Sending build context to Docker daemon  15.08MB
+
+Step #3 - "Executando build do container": Step 1/12 : FROM golang:1.14.6-alpine as builder
+Step #3 - "Executando build do container": 1.14.6-alpine: Pulling from library/golang
+Step #3 - "Executando build do container": Digest: sha256:d6deb50437547fd7226890aa19b075fbf7f5063e3c0d7a2eaf7fb41d11069013
+Step #3 - "Executando build do container": Status: Downloaded newer image for golang:1.14.6-alpine
+Step #3 - "Executando build do container":  ---> 30df784d6206
+Step #3 - "Executando build do container": Step 2/12 : ENV GOPATH /go
+Step #3 - "Executando build do container":  ---> Running in 4f72327e523f
+Step #3 - "Executando build do container": Removing intermediate container 4f72327e523f
+Step #3 - "Executando build do container":  ---> 352386855974
+Step #3 - "Executando build do container": Step 3/12 : RUN apk update && apk add --no-cache git & mkdir $GOPATH/src/go-hpa/
+Step #3 - "Executando build do container":  ---> Running in 54147af88a85
+Step #3 - "Executando build do container": Removing intermediate container 54147af88a85
+Step #3 - "Executando build do container":  ---> 8cf7dfdfb55d
+Step #3 - "Executando build do container": Step 4/12 : WORKDIR $GOPATH/src/go-hpa/
+Step #3 - "Executando build do container":  ---> Running in 10a03f289a9e
+Step #3 - "Executando build do container": Removing intermediate container 10a03f289a9e
+Step #3 - "Executando build do container":  ---> e4e99df9843a
+Step #3 - "Executando build do container": Step 5/12 : COPY ./go-hpa.go ./go-hpa_test.go ./
+Step #3 - "Executando build do container":  ---> 23e4ccfa26de
+Step #3 - "Executando build do container": Step 6/12 : RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-extldflags "-static"' -o $GOPATH/src/go-hpa/go-hpa .
+Step #3 - "Executando build do container":  ---> Running in 58bf668a9212
+Step #3 - "Executando build do container": Removing intermediate container 58bf668a9212
+Step #3 - "Executando build do container":  ---> 71320802393f
+Step #3 - "Executando build do container": Step 7/12 : FROM scratch
+Step #3 - "Executando build do container":  ---> 
+Step #3 - "Executando build do container": Step 8/12 : COPY --from=builder /go/src/go-hpa/go-hpa /app/
+Step #3 - "Executando build do container":  ---> ed457782f7aa
+Step #3 - "Executando build do container": Step 9/12 : WORKDIR /app
+Step #3 - "Executando build do container":  ---> Running in d9df44bc518d
+Step #3 - "Executando build do container": Removing intermediate container d9df44bc518d
+Step #3 - "Executando build do container":  ---> 4dd18f40c74e
+Step #3 - "Executando build do container": Step 10/12 : USER 1000
+Step #3 - "Executando build do container":  ---> Running in b4660355e6f7
+Step #3 - "Executando build do container": Removing intermediate container b4660355e6f7
+Step #3 - "Executando build do container":  ---> 1a5ef8e41aad
+Step #3 - "Executando build do container": Step 11/12 : EXPOSE 8000
+Step #3 - "Executando build do container":  ---> Running in 3695b0f5eed9
+Step #3 - "Executando build do container": Removing intermediate container 3695b0f5eed9
+Step #3 - "Executando build do container":  ---> 1d8ee377d9ed
+Step #3 - "Executando build do container": Step 12/12 : ENTRYPOINT ["./go-hpa"]
+Step #3 - "Executando build do container":  ---> Running in 454dfcba7728
+Step #3 - "Executando build do container": Removing intermediate container 454dfcba7728
+Step #3 - "Executando build do container":  ---> c31e46eb6fef
+Step #3 - "Executando build do container": Successfully built c31e46eb6fef
+Step #3 - "Executando build do container": Successfully tagged gcr.io/codeeducation-test-285316/go-hpa:1.0.0
+Step #3 - "Executando build do container": Successfully tagged gcr.io/codeeducation-test-285316/go-hpa:latest
+Finished Step #3 - "Executando build do container"
+PUSH
+Pushing gcr.io/codeeducation-test-285316/go-hpa:latest
+The push refers to repository [gcr.io/codeeducation-test-285316/go-hpa]
+6dc9b01e4e5a: Preparing
+6dc9b01e4e5a: Pushed
+latest: digest: sha256:22eef403312e94c4d97d4f8b6e3ae1187b440e001df735f783ad00826d7e8319 size: 528
+Pushing gcr.io/codeeducation-test-285316/go-hpa:1.0.0
+The push refers to repository [gcr.io/codeeducation-test-285316/go-hpa]
+6dc9b01e4e5a: Preparing
+6dc9b01e4e5a: Layer already exists
+1.0.0: digest: sha256:22eef403312e94c4d97d4f8b6e3ae1187b440e001df735f783ad00826d7e8319 size: 528
+DONE
