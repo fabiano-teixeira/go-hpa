@@ -1,0 +1,48 @@
+substitutions:
+  _GO_HPA_VERSION: 1.0.0
+steps:
+  - id: "Rodando testes ..."
+    name: 'gcr.io/cloud-builders/go'
+    args: ['test', 'go-hpa']
+    env: ['PROJECT_ROOT=go-hpa']
+  
+
+  - id: "Instalando o GO ..."
+    name: 'gcr.io/cloud-builders/go'
+    args: ['install', '.']
+    env: ['PROJECT_ROOT=go-hpa']
+
+
+  - id: "Executando o build da aplicação."
+    name: 'gcr.io/cloud-builders/go'
+    args: 
+      - 'build'
+      - '-a'
+      - '-installsuffix'
+      - 'cgo' 
+      - '-ldflags'
+      - '-extldflags "-static"'
+      - '-o'
+      - 'go-hpa'
+      - '.'
+    env: 
+      - 'CGO_ENABLED=0'
+      - 'GOOS=linux'
+      - 'PROJECT_ROOT=go-hpa'
+
+
+  - id: "Executando build do container"
+    name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/go-hpa:${_GO_HPA_VERSION}'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/go-hpa:latest' 
+
+
+
+images:
+  - 'gcr.io/$PROJECT_ID/go-hpa:latest'
+  - 'gcr.io/$PROJECT_ID/go-hpa:${_GO_HPA_VERSION}'
+tags: ['fullcycle-go-hpa']

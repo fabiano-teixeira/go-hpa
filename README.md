@@ -1,6 +1,6 @@
 ### Informações sobre o exercício "Kubernetes e HPA" (14/08/2020)
 <br/>
-Exercício realizado conforme solicitado
+Exercício realizado conforme solicitado.
 
 #### Criando o container Busybox para fazer a carga em go-hpa
 ``` kubectl run -it loader --image=busybox /bin/sh ```
